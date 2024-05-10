@@ -18,45 +18,59 @@ async function getData(): Promise<Payment[]> {
   return [
     {
       id: '1',
-      amount: 100,
-      status: 'pending',
+      name: 'James',
       email: 'a@example.com',
+      age: '10s',
+      gender: 'x',
+      status: 'pending',
     },
     {
       id: '2',
-      amount: 100,
-      status: 'pending',
+      name: 'Ken',
       email: 'b@example.com',
+      age: '10s',
+      gender: 'male',
+      status: 'pending',
     },
     {
       id: '3',
-      amount: 100,
-      status: 'pending',
+      name: 'Kylie',
       email: 'c@example.com',
+      age: '10s',
+      gender: 'female',
+      status: 'pending',
     },
     {
       id: '4',
-      amount: 100,
-      status: 'pending',
+      name: 'Chris',
       email: 'd@example.com',
+      age: '10s',
+      gender: 'male',
+      status: 'pending',
     },
     {
       id: '5',
-      amount: 100,
-      status: 'pending',
+      name: 'Ronald',
       email: 'e@example.com',
+      age: '10s',
+      gender: 'male',
+      status: 'pending',
     },
     {
       id: '6',
-      amount: 100,
-      status: 'pending',
+      name: 'Jessy',
       email: 'f@example.com',
+      age: '10s',
+      gender: 'female',
+      status: 'pending',
     },
     {
       id: '7',
-      amount: 100,
-      status: 'pending',
+      name: 'Alex',
       email: 'g@example.com',
+      age: '10s',
+      gender: 'x',
+      status: 'success',
     },
     // ...
   ];
@@ -66,12 +80,9 @@ export default async function Admin() {
   const data = await getData();
 
   return (
-    <main>
-      <div className="container mx-auto py-10">
+    <main className="h-dvh flex justify-center items-center">
+      <div className="container m-auto py-10">
         <DataTable columns={columns} data={data} />
-        <Button asChild>
-          <Link href="/">申込画面</Link>
-        </Button>
       </div>
     </main>
   );
