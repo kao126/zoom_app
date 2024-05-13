@@ -24,7 +24,7 @@ import Link from 'next/link';
 export default function Form() {
   return (
     <main className="h-dvh flex justify-center items-center">
-      <Card className="w-[700px] m-auto">
+      <Card className="w-[95%] max-w-[700px] min-w-[300px] m-auto">
         <CardHeader>
           <CardTitle>Application Form</CardTitle>
           <CardDescription>Zoomウェビナー申し込みフォーム</CardDescription>
